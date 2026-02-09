@@ -1,5 +1,5 @@
 ## 📸 Preview
-![App Screenshot](./assets/screenshot.png)
+![App Screenshot](./src/assets/screenshot.png)
 
 ## 🚀 User Management System (Schema-Driven)
 A robust React + TypeScript CRUD application featuring a unique Schema-Driven UI. 
