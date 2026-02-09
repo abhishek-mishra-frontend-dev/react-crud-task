@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": "1a11",
+      "first_name": "Abhishek",
+      "last_name": "Mishra",
+      "phone": "9131380719",
+      "email": "abhishekdp456@gmail.com"
+    },
+    {
+      "id": "b100",
+      "first_name": "Amit ",
+      "last_name": "Singh",
+      "phone": "8876297299",
+      "email": "amit@gmail.com"
+    },
+    {
+      "id": "b35d",
+      "first_name": "Raju",
+      "last_name": "Pal",
+      "phone": "7686493474",
+      "email": "raju@gmail.com"
+    },
+    {
+      "id": "e0d9",
+      "first_name": "Kishor",
+      "last_name": "Sahu",
+      "phone": "6262797302",
+      "email": "kisor@gmail.com"
+    },
+    {
+      "id": "5250",
+      "first_name": "Nandni",
+      "last_name": "Maurya",
+      "phone": "7566978448",
+      "email": "nandni@gmail.com"
+    }
+  ]
+}
