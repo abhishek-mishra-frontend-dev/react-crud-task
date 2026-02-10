@@ -39,12 +39,12 @@ const UserTable = ({
                             {schema.map((field) => (
                                 <th
                                     key={field.name}
-                                    className="text-left text-md px-4 py-2 border-b border-black/5 text-black-accent font-medium"
+                                    className="whitespace-nowrap text-left text-md px-4 py-2 border-b border-black/5 text-black-accent font-medium"
                                 >
                                     {field.label}
                                 </th>
                             ))}
-                            <th className="text-left px-4 py-2 border-b border-black/5 text-black-accent font-medium">
+                            <th className="whitespace-nowrap text-left px-4 py-2 border-b border-black/5 text-black-accent font-medium">
                                 Actions
                             </th>
                         </tr>
@@ -66,11 +66,11 @@ const UserTable = ({
                             data.map((row, index) => (
                                 <tr key={index} className="border-b border-black/10 bg-white">
                                     {schema.map((field) => (
-                                        <td key={field.name} className="px-4 py-2 text-black text-sm">
+                                        <td key={field.name} className="px-4 py-2 text-black text-sm whitespace-nowrap">
                                             {row[field.name]}
                                         </td>
                                     ))}
-                                    <td className="px-4 py-2 space-x-2">
+                                    <td className="px-4 py-2 space-x-2 whitespace-nowrap">
                                         <button
                                             onClick={() => onEdit(row)}
                                             className="inline-flex items-center gap-1.5 text-black text-sm bg-gray-light px-2.5 py-1 rounded-2xl cursor-pointer"

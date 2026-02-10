@@ -33,7 +33,7 @@ const UserForm = ({ schema, onSubmit, onCancel, defaultValues, layout, loading }
             })}
             className={
                 layout === "row"
-                    ? "flex flex-wrap gap-6"
+                    ? "flex flex-wrap gap-4 md:gap-6"
                     : "flex flex-col gap-4"
             }
         >
@@ -41,7 +41,7 @@ const UserForm = ({ schema, onSubmit, onCancel, defaultValues, layout, loading }
                 <div
                     key={field.name}
                     className={
-                        layout === "row" ? "flex-1 min-w-[48%]" : "w-full"
+                        layout === "row" ? "w-full md:flex-1 md:min-w-[45%]" : "w-full"
                     }
                 >
                     <CustomInput
@@ -51,7 +51,7 @@ const UserForm = ({ schema, onSubmit, onCancel, defaultValues, layout, loading }
                 </div>
             ))}
             <div
-                className={`w-full flex justify-end gap-3 ${layout === "column" ? "border-t border-black/10 mt-1 pt-4" : ""
+                className={`w-full flex flex-col sm:flex-row justify-end gap-3 ${layout === "column" ? "border-t border-black/10 mt-1 pt-4" : ""
                     }`}
             >
                 {
@@ -59,7 +59,7 @@ const UserForm = ({ schema, onSubmit, onCancel, defaultValues, layout, loading }
                         <button
                             type="button"
                             onClick={onCancel}
-                            className="bg-transparent text-black px-10 py-2.5 rounded-3xl cursor-pointer border border-black/20"
+                            className="w-full sm:w-auto bg-transparent text-black px-10 py-2.5 rounded-3xl cursor-pointer border border-black/20 order-2 sm:order-1"
                         >
                             Cancel
                         </button>
@@ -68,7 +68,7 @@ const UserForm = ({ schema, onSubmit, onCancel, defaultValues, layout, loading }
                 <button
                     type="submit"
                     disabled={loading}
-                    className="bg-black text-white px-10 py-2.5 rounded-3xl cursor-pointer inline-flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto bg-black text-white px-10 py-2.5 rounded-3xl cursor-pointer justify-center inline-flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed order-1 sm:order-2"
                 >
                     {loading ? <Spinner /> : "Submit"}
                 </button>
