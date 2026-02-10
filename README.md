@@ -6,7 +6,7 @@ A React + TypeScript CRUD application built using a Schema-Driven UI architectur
 
 This approach ensures that adding new fields requires **minimal code changes** while keeping the UI automatically in sync.
 
-**🔗 Live Demo**: [https://react-crud-task-two.vercel.app/](https://react-crud-task-two.vercel.app/)
+**🔗 Live Demo**: [https://react-crud-task-two.vercel.app/](https://react-crud-task-olive.vercel.app/)
 
 ## 🧠 The Core Innovation: Schema-Driven UI
 Unlike traditional CRUD apps where inputs and table cells are manually coded, this project uses a **Single Source of Truth**.
