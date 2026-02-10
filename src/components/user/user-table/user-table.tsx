@@ -66,11 +66,13 @@ const UserTable = ({
                             data.map((row, index) => (
                                 <tr key={index} className="border-b border-black/10 bg-white">
                                     {schema.map((field) => (
-                                        <td key={field.name} className="px-4 py-2 text-black text-sm whitespace-nowrap">
+                                        <td 
+                                        key={field.name} 
+                                        className="px-4 py-2 text-black text-sm whitespace-nowrap truncate max-w-[150px]">
                                             {row[field.name]}
                                         </td>
                                     ))}
-                                    <td className="px-4 py-2 space-x-2 whitespace-nowrap">
+                                    <td className="px-4 py-2 space-x-2 whitespace-nowrap ">
                                         <button
                                             onClick={() => onEdit(row)}
                                             className="inline-flex items-center gap-1.5 text-black text-sm bg-gray-light px-2.5 py-1 rounded-2xl cursor-pointer"
