@@ -40,19 +40,16 @@ const DeletePopup = ({
                 <div className="flex justify-end gap-3 mt-6 border-t border-black/10 pt-4">
                     <button
                         onClick={onCancel}
-                        className="bg-transparent text-black px-10 py-2.5 rounded-3xl cursor-pointer border border-black/20"
+                        className="w-[150px] bg-transparent text-black py-2.5 rounded-3xl cursor-pointer border border-black/20"
                     >
                         Cancel
                     </button>
                     <button
                         onClick={onConfirm}
                         disabled={loading}
-                        className="px-10 py-2 rounded-3xl bg-red-600 text-white inline-flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
+                        className="w-[150px] py-2 rounded-3xl bg-red-600 text-white justify-center inline-flex items-center disabled:opacity-70 cursor-pointer"
                     >
-                        {loading && (
-                            <Spinner />
-                        )}
-                        Delete
+                        {loading ? <Spinner /> : "Delete"}
                     </button>
                 </div>
             </div>

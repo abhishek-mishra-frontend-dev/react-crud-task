@@ -68,7 +68,7 @@ const UserForm = ({ schema, onSubmit, onCancel, defaultValues, layout, loading }
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full sm:w-auto bg-black text-white px-10 py-2.5 rounded-3xl cursor-pointer justify-center inline-flex items-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed order-1 sm:order-2"
+                    className="w-[125px] bg-black text-white py-2.5 rounded-3xl cursor-pointer justify-center inline-flex items-center gap-2 disabled:opacity-70 order-1 sm:order-2"
                 >
                     {loading ? <Spinner /> : "Submit"}
                 </button>
