@@ -2,22 +2,28 @@
 ![App Screenshot](./src/assets/screenshot.png)
 
 ## 🚀 User Management System (Schema-Driven)
-A robust React + TypeScript CRUD application featuring a unique Schema-Driven UI. 
-This architecture ensures that the entire interface (Forms & Tables) adapts automatically to data definitions.
+A React + TypeScript CRUD application built using a Schema-Driven UI architecture where both the Form and Table are generated from a single configuration file.
 
-🔗 [Live Demo Link]
+This approach ensures that adding new fields requires **minimal code changes** while keeping the UI automatically in sync.
+
+**🔗 Live Demo**: [https://react-crud-task-two.vercel.app/](https://react-crud-task-two.vercel.app/)
 
 ## 🧠 The Core Innovation: Schema-Driven UI
-- Unlike traditional apps where you manually code every input and table cell, this project uses a Single Source of Truth.
-- Zero-Effort Updates: Adding a field like Date of Birth only requires a 4-line addition to the schema file.
-- Automatic Sync: The Form and the Table stay perfectly in sync without touching their respective components.
+Unlike traditional CRUD apps where inputs and table cells are manually coded, this project uses a **Single Source of Truth**.
+
+### What this means:
+- Add a new field in one file → Form updates automatically.
+- Same field appears in Table automatically.
+- No changes required in form component or table component
+  
+This directly addresses the extensibility requirement of the assignment.
 
 ## 🏗️ Tech Stack
-- Frontend: React (Vite) + TypeScript
-- State & Forms: React Hook Form
-- Styling: Tailwind CSS
-- API: Axios + JSON Server (Mock API)
-- Feedback: React Hot Toast + Skeleton Loading
+- **Frontend**: React (Vite) + TypeScript
+- **State & Forms**: React Hook Form
+- **Styling**: Tailwind CSS
+- **API**: Axios + JSON Server (Mock API)
+- **Feedback**: React Hot Toast + Skeleton Loading + Button Spinner
 
 ## 📁 Project Structure
 ```
@@ -51,15 +57,22 @@ src/
 - Advanced UI: Loading skeletons, button spinners, and toast notifications.
 - Logic Separation: UI components are "dumb"; logic lives in custom hooks.
 
-## 🧪 Getting Started
-1. Install dependencies
-  -```npm install```
-2. Start the Mock API (Essential)
-   - The app relies on JSON Server to simulate a real backend.
-   - ```npm run server```
-   - API runs at: http://localhost:5000/users
-3. Run the App
-   - ```npm run dev```
+## ▶️ Run both frontend and mock API together (recommended)
+This project uses **JSON Server** as a mock backend and Vite for the frontend.
+You can run both with a single command:
+```
+npm install
+npm start
+```
+This will start:
+- Vite app
+- JSON server at http://localhost:5000/users
+
+## 📌 Design Decisions
+- Single dashboard layout for simplicity.
+- Schema as the single source of truth.
+- Custom hook (UseUsers) for clean logic separation.
+- Reusable UI components for scalability
 
 ## 🙌 Author
 Abhishek Mishra
